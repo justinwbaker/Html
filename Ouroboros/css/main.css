@@ -1,0 +1,182 @@
+/*
+LIGHT: C5C1C0;
+DARK: 0A1612;
+lIGHT DARK: 1A2930;
+HIGHLIGHT: F7CE3E;
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-size: 1.5em;
+    background-color: #d0d0d0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    background-color: #1a1a1a;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #fafafa;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #d0d0d0;
+    color: #000;
+}
+
+li a.title {
+  display: block;
+  font-size: 32px;
+  color: #aaa;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #aaa;
+}
+
+li a.title:hover {
+  display: block;
+  color: #aaa;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.content {
+    margin-left: 13%; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding-left: 1.5%;
+    padding-top: 25px;
+    width: 83%;
+    min-height: 750px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.bottomSpacing{
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+
+footer {
+  margin-left: 10%;
+  width: 90%;
+  display: block;
+  color: #aaa;
+  background: #1a1a1a;
+  text-align: center;
+}
+
+/* login */
+form {border: 3px solid #aaa;margin-top: 10px}
+
+input[type=text], input[type=password], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 2px solid #1a1a1a;
+}
+.rightAlign{
+    text-align: right;
+}
+tr:nth-child(even){background-color: #88bbd6;}
+tr:nth-child(odd){background-color: #77aad6;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1a1a1a;
+    color: #aaa;
+}
+
+h1{
+    text-align: center;
+    color: #465c8b;
+}
