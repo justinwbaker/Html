@@ -1,6 +1,11 @@
 <ul>
     <?php
-        $PathToPHP = "/Ouroboros/php/";
+        $PathToPHP = "../";
+
+        if(strcmp($currentPage, 'Home') == 0) {
+            $PathToPHP = "php/";
+        }
+
         $urls = array(
             'Home' => '/Ouroboros/index.php',
             'Profile' => $PathToPHP . 'pages/profile.php',
@@ -9,7 +14,7 @@
         );
         echo "<br>";
         if(isset($_SESSION['admin']) == "admin") {
-            $urls["Games"] = "pages/games-admin.php";
+            $urls["Games"] = $PathToPHP . "pages/games-admin.php";
         }
 
         $urls['Login'] = $PathToPHP . "pages/login.php";
